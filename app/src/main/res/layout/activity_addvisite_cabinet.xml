@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addvisite_cabinet">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/trans_white_rectangle"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo"
+                android:layout_marginTop="15dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/form_container"
+                android:drawablePadding="5dp"
+                android:text="Selectionner un médecin"
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/selectmedecin" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/form_container"
+                android:drawablePadding="5dp"
+                android:text="Ajouter date de la visite"
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/visibutton" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/form_container"
+                android:drawablePadding="5dp"
+                android:text="Ajouter heure d'arrivée"
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/arrbutton"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/form_container"
+                android:drawablePadding="5dp"
+                android:text="Ajouter heure de début de l'entretien"
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/entrbutton"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/form_container"
+                android:drawablePadding="5dp"
+                android:text="Ajouter heure de départ"
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/depbutton"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sur Rendez-vous ?"
+                android:textSize="11dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/rememberMe"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Valider"
+                android:background="@drawable/register_button"
+                android:layout_gravity="center"
+                android:id="@+id/buttonValidate"
+                android:layout_marginBottom="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
